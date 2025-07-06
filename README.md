@@ -52,35 +52,24 @@ Follow these steps to set up and run the project locally:
    npm start
 
 
-##🌐 URLs
-
+🌐 URLs
 Frontend: http://localhost:3000
-
 Backend API: http://localhost:5001/users
 
-##📌 Notes
+📌 Notes
 The app uses Base64 encoding for UI display only — it is not encryption and not meant for securing data.
-
 Data stored in db.json remains in plain text.
-
 Decoding is done only while editing user details.
 
-##🛠 Tech Stack
+🛠 Tech Stack
 Frontend: React, Axios
-
 Backend: JSON Server
-
 Encoding: btoa / atob (Base64 for display)
-
 Styling: Inline CSS
 
-##📦 Features
+📦 Features
 Add new users
-
 Edit user details
-
 Delete existing users
-
 Base64-encoded name & email on UI (stored in plain form in backend)
-
 Simple and clean UI
