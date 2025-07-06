@@ -33,37 +33,54 @@ A simple User Management application built using **React** (frontend) and **JSON
 
 ### 1. Clone the Repo
 
-```bash
+
 git clone https://github.com/kaviya-projects/User-Management-App.git
 cd user-management
 
-## ⚙️ How to Run the Project
+###⚙️ How to Run the Project
 
 Follow these steps to set up and run the project locally:
 
-### 1. Install Dependencies
-
-```bash
-npm install
-
+1. Install Dependencies
+   npm install
+   
 2. Start the Backend (JSON Server)
-bash
-Copy
-Edit
-npx json-server --watch db.json --port 5001
-✅ Ensure the db.json file is present in the project root.
+   npx json-server --watch db.json --port 5001
+   ✅ Make sure the db.json file is present in the project root directory.
 
 3. Start the Frontend (React App)
-bash
-Copy
-Edit
-npm start
-🌐 Frontend URL: http://localhost:3000
+   npm start
 
-📡 Backend API Endpoint: http://localhost:5001/users
 
-css
-Copy
-Edit
+##🌐 URLs
 
-Let me know if you’d also like a section for **project screenshots**, **demo video**, or **deployment instructions**!
+Frontend: http://localhost:3000
+
+Backend API: http://localhost:5001/users
+
+##📌 Notes
+The app uses Base64 encoding for UI display only — it is not encryption and not meant for securing data.
+
+Data stored in db.json remains in plain text.
+
+Decoding is done only while editing user details.
+
+##🛠 Tech Stack
+Frontend: React, Axios
+
+Backend: JSON Server
+
+Encoding: btoa / atob (Base64 for display)
+
+Styling: Inline CSS
+
+##📦 Features
+Add new users
+
+Edit user details
+
+Delete existing users
+
+Base64-encoded name & email on UI (stored in plain form in backend)
+
+Simple and clean UI
